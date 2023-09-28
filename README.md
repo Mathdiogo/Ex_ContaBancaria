@@ -1,18 +1,56 @@
-## Getting Started
+Conta Bancária em Java:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este é um exemplo simples de um programa Java que simula uma conta bancária. Ele foi criado como parte de um projeto educacional para entender os conceitos básicos de programação orientada a objetos em Java.
 
-## Folder Structure
+Descrição:
 
-The workspace contains two folders by default, where:
+O código consiste em duas classes principais:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+App.java: Este é o programa principal que demonstra o funcionamento de uma conta bancária. Ele cria duas contas de exemplo, deposita dinheiro nelas, faz saques, paga mensalidades e exibe o estado atual das contas.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+ContaBanco.java: Esta é a classe que representa uma conta bancária. Ela possui atributos como número da conta, tipo de conta, saldo, status e métodos para abrir, fechar, depositar, sacar e pagar mensalidades.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Funcionalidades:
+Abertura de contas corrente e poupança.
+Depositar dinheiro em uma conta.
+Sacar dinheiro de uma conta.
+Pagar mensalidade da conta.
+Fechar uma conta bancária.
 
-## Dependency Management
+Uso:
+Para usar este código:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Clone este repositório para sua máquina local.
+
+Abra o projeto em sua IDE Java preferida.
+
+Execute o arquivo App.java para ver as operações de conta bancária em ação.
+
+Exemplo
+Aqui está um exemplo de como usar o código para criar uma conta bancária e realizar operações:
+
+java
+
+ContaBanco p1 = new ContaBanco();
+p1.setNumConta(1111);
+p1.setDono("Matheus");
+p1.abrirConta("cc");
+
+ContaBanco p2 = new ContaBanco();
+p2.setNumConta(2104);
+p2.setDono("Rayssa");
+p2.abrirConta("cp");
+
+p1.depositar(300);
+p2.depositar(500);
+
+p2.sacar(100);
+
+p1.pagarMensalidade();
+p2.pagarMensalidade();
+
+p1.estadoAtual();
+p2.estadoAtual();
+
+Contribuição:
+Sinta-se à vontade para contribuir com melhorias ou correções neste código. Basta criar um fork deste repositório, fazer suas alterações e enviar um pull request.
